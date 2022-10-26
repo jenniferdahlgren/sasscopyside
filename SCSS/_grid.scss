@@ -1,0 +1,25 @@
+@use "variables" as var;
+.item1 {
+    grid-area: start;
+    display: grid;
+    height: 100vh;
+}
+
+.item2 {
+    grid-area: team;
+    background-color: var.$white;
+}
+
+.item3 {
+    grid-area: footer;
+    background-color: var.$secondary;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template:
+        'start start start start start start'
+        'team team team team team team'
+        'footer footer footer footer footer footer';
+}

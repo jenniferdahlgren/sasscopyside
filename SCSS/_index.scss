@@ -1,0 +1,14 @@
+@use "variables" as var;
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-size: 20px;
+    color: var.$white;
+    margin: 0;
+}
+/* Fix for a-tag color and decoration when visited, active and hovered. */
+a, a:visited, a:hover, a:active {
+    color: inherit;
+    text-decoration: inherit;
+}

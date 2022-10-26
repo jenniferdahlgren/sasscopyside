@@ -1,0 +1,30 @@
+@use "variables" as var;
+@use "mixins";
+
+@include mixins.small-screen {
+    #navbar {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #team{
+        ul{
+            grid-template-columns: auto;
+        }
+    }
+
+    #hero{
+        #down{
+            top: 180px
+        }
+    }
+
+    #footer{
+        grid-template-columns: auto;
+        height: 800px;
+    }
+
+}

@@ -1,0 +1,36 @@
+@use "variables" as var;
+
+/* Navbar */
+@mixin navbar {
+    text-align: end;
+    float: right;
+    height: 80px;
+    width: 100%;
+    background-color: var.$nav-color;
+    line-height: 80px;
+}
+
+/* Quote */
+@mixin quote {
+    background-color: var.$panel;
+    width: 500px;
+    height: 100px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    font-weight: 100;
+    padding: 25px;
+    text-align: left;
+}
+
+/* Hover Cursor Pointer */
+@mixin pointer {
+    &:hover{
+        cursor: pointer;
+    }
+}
+/* Queries */
+@mixin small-screen {
+    @media only screen and (max-width: 400px) {
+        @content;
+    }
+}
