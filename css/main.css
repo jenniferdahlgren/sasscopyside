@@ -8,7 +8,6 @@ body {
   margin: 0;
 }
 
-/* Fix for a-tag color and decoration when visited, active and hovered. */
 a, a:visited, a:hover, a:active {
   color: inherit;
   text-decoration: inherit;
@@ -38,7 +37,6 @@ a, a:visited, a:hover, a:active {
 
 /* Navbar */
 /* Quote */
-/* Hover Cursor Pointer */
 /* Queries */
 @media only screen and (max-width: 400px) {
   #navbar {
